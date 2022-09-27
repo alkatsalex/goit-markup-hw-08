@@ -1,0 +1,43 @@
+.send__icon {
+    fill: #fff;
+}
+.send__btn {
+    display: flex;
+    gap: 10px;
+}
+.send-form__thomb {
+    display: flex;
+}
+.send-form__title {
+    color: var(--main-background-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.send__input {
+    background-color: transparent;
+    height: 50px;
+    width: 348px;
+    outline: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding-left: 16px;
+    color: var(--main-background-color);
+    transition: border var(--duration) var(--timing-function);
+}
+.send__input {
+    padding-left: 16px;
+}
+.send__input {
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+.send-form {
+    margin-right: auto;
+}

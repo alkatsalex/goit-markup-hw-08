@@ -1,0 +1,18 @@
+.activity__item+.activity__item {
+    margin-left: 30px;
+}
+.activity__modal {
+    position: relative;
+}
+.activity__title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-background-color);
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--activity-modal);
+}

@@ -1,0 +1,13 @@
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--header-bg);
+
+}
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.auth-nav {
+    display: flex;
+}

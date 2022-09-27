@@ -1,0 +1,138 @@
+.register-form__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: var(--main-color-title)
+}
+
+.register-form__group {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.register-form__field {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.register-form__lable {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.register-form__input {
+    width: 100%;
+    height: 45px;
+    padding-left: 42px;
+    padding-right: 42px;
+
+    border: var(--register-form-border);
+    border-radius: 4px;
+    outline: transparent;
+
+    transition: border var(--duration) var(--timing-function);
+}
+
+.register-form__input {
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.register-form__message {
+    display: block;
+    width: 100%;
+    height: 130px;
+    padding: 18px;
+
+    font-size: 14px;
+
+    resize: none;
+    outline: transparent;
+    border: var(--register-form-border);
+    border-radius: 10px;
+
+    transition: border var(--duration) var(--timing-function);
+}
+
+.register-form__message {
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.register-form__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.register-form__heading {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.register-form__icon {
+    position: absolute;
+    display: block;
+    bottom: 12px;
+    left: 12px;
+    transition: fill var(--duration) var(--timing-function);
+}
+
+.register-form__input {
+        &:hover~ .register-form__icon {
+            fill: var(--accent-color);
+        }
+        &:focus ~ .register-form__icon {
+            fill: var(--accent-color);
+        }
+}
+
+.register-form__icon-check {
+    opacity: 0;
+    transition: opacity var(--duration) var(--timing-function);
+}
+
+.register-form__icon-uncheck {
+    opacity: 1;
+    transition: opacity var(--duration) var(--timing-function);
+}
+
+.register-form__checkbox:checked+.register-form__icons .register-form__icon-check {
+    opacity: 1;
+}
+
+.register-form__checkbox:checked+.register-form__icons .register-form__icon-uncheck {
+    opacity: 0;
+}
+
+.register-form__link {
+    color: var(--accent-color);
+}
+
+.register-form__btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
