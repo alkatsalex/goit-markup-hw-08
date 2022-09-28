@@ -38,15 +38,16 @@
     }
 }
 .foot-add {
-    display: flex;
+    // display: flex;
     align-items: baseline;
+    text-align: center;
 }
-.address-thomb {
-    margin-right: 70px;
-}
-.sociallink {
-    margin-right: 93px;
-}
+// .address-thomb {
+//     margin-right: 70px;
+// }
+// .sociallink {
+//     margin-right: 93px;
+// }
 .sociallink__title {
     color: var(--main-background-color);
     margin-bottom: 20px;

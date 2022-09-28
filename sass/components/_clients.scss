@@ -2,21 +2,41 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .client__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: currentColor;
-    width: 170px;
+    width: 210px;
     height: 92px;
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 .client__link {
     display: block;
     border: 1px solid var(--icon);
     border-radius: 4px;
     color: var(--icon);
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     transition: color var(--duration) var(--timing-function), border-color var(--duration) var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 .client__link {
     &:hover {

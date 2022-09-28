@@ -6,7 +6,7 @@
     gap: 10px;
 }
 .send-form__thomb {
-    display: flex;
+    // display: flex;
 }
 .send-form__title {
     color: var(--main-background-color);
@@ -20,7 +20,7 @@
 .send__input {
     background-color: transparent;
     height: 50px;
-    width: 348px;
+    width: 100%;
     outline: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

@@ -9,7 +9,6 @@ img {
     display: block;
 }
 .list {
-    display: flex;
     list-style-type: none;
     margin: 0;
     padding-left: 0;
@@ -20,7 +19,7 @@ img {
 }
 .title {
     margin-bottom: 10px;
-
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -31,20 +30,6 @@ img {
 .position {
     position: relative;
     color: #2196F3;
-}
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section-title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color-title);
 }
 .visually-hidden {
     position: absolute;
@@ -58,10 +43,42 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.section-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-title);
+}
 .container {
     margin-right: auto;
     margin-left: auto;
-    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
+    max-width: 480px;
+    outline: 2px solid tomato;
+
+    @media screen and (min-width: 768px ) {
+        & {
+        max-width: 768px;
+       } 
+    }
+
+    @media screen and (min-width: 1200px) {
+        & {
+            max-width: 1200px;
+        }
+    }
 }
