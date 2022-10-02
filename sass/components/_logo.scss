@@ -3,14 +3,20 @@
 
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--main-color-title);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
+
 }
 .footer .logo {
     color: var(--main-background-color);
     margin-bottom: 20px;
+    margin-top: 0;
 }
 .logo--white {
     color: var(--main-background-color);

@@ -1,3 +1,10 @@
+.button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    row-gap: 15px;
+}
 .button-list__item+.button-list__item {
     margin-left: 8px;
 }
@@ -16,9 +23,9 @@
     letter-spacing: 0.03em;
     color: var(--main-color-text);
 }
-.section.our-work .list {
-    justify-content: center;
-}
+// .section.our-work .list {
+//     justify-content: center;
+// }
 .card__list {
     margin-top: 50px;
     flex-wrap: wrap;

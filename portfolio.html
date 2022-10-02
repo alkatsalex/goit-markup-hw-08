@@ -17,15 +17,14 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="header__container container">
             <a class="logo link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
             <nav class="site-nav">
                 <ul class="site-nav__list list">
-                    <li class="site-nav__item"><a class="site-nav__link link" href="./index.html">Студія</a>
+                    <li class="site-nav__item"><a class="site-nav__link position link" href="./index.html">Студія</a>
                     </li>
-                    <li class="site-nav__item"><a class="site-nav__link position link"
-                            href="./portfolio.html">Портфоліо</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="site-nav__item"><a class="site-nav__link link" href="./index.html">Контакти</a></li>
                 </ul>
             </nav>
@@ -44,8 +43,14 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+
+            <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="" width="40" height="40">
+                    <use href="./imeges/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+    </header>
 
     <main>
         <section class="section our-work">
@@ -244,11 +249,9 @@
 
     <footer class="footer">
 
-        <!--Address-->
         <div class="container foot-add">
-
-            <div class="address-thomb">
-                <a class="logo link" href="./index.html"><span class="alogo__accent">Web</span>Studio</a>
+            <div class="address-thumb">
+                <a class="logo logo--white link" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
 
                 <address class="address">
                     <ul class="address__list">
@@ -294,11 +297,11 @@
             <div class="send-form">
                 <form name="send-form">
                     <p class="send-form__title">Підпишіться на розсилку</p>
-                    <div class="send-form__thomb">
+                    <div class="send-form__thumb">
                         <label>
                             <input class="send__input" type="email" name="send" placeholder="E-mail">
                         </label>
-                        <button class="send__btn primary btn" type="submit">
+                        <button class="send__btn btn primary" type="submit">
                             Підписатися
                             <svg class="send__icon" width="24" height="24">
                                 <use href="./imeges/icons.svg#send"></use>
