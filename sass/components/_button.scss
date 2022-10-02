@@ -66,10 +66,29 @@
     background-color: var(--main-background-color);
     transition: fill var(--duration) var(--timing-function);
 }
+.close-btn__menu {
+        cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            background-color: var(--main-background-color);
+            transition: fill var(--duration) var(--timing-function);
+}
 
 .close-btn {
     &:hover {
         fill: var(--accent-color);
     }
 }
-
+.close-btn__menu {
+    &:hover {
+            fill: var(--accent-color);
+        }
+}
