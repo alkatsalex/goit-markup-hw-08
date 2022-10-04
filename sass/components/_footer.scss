@@ -44,10 +44,19 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        text-align: left;
         align-items: center;
         justify-content: center;
+        align-items: baseline;
     }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+
 }
 .address-thumb {
 
@@ -60,6 +69,7 @@
 
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
+        width: 231px;
     }
     
 }
@@ -75,5 +85,9 @@
 .sociallink__title {
     color: var(--main-background-color);
     margin-bottom: 20px;
+    
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 

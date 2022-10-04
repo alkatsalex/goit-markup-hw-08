@@ -54,7 +54,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    max-width: 1200px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -63,7 +63,9 @@
     }
 
         @media screen and (min-width: 1200px) {
-            max-width: 1200px;
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
         }
 }
 
@@ -77,4 +79,11 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-background-color);
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
 }
+

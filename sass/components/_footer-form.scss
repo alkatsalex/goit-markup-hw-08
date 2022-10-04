@@ -15,8 +15,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px)  {
+    @media screen and (max-width: 1199px)  {
         text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
     }
 }
 .send__input {
@@ -42,7 +45,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 348px;
+        width: 358px;
     }
 
     &:focus {
@@ -54,8 +57,12 @@
 
     @media screen and (min-width: 768px) {
         display: block;
-        margin-left: auto;
+        margin-right: 0;
         margin-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
     }
 
     &__thumb {
@@ -65,7 +72,3 @@
     }
 }
 
-.send__btn {
-    margin: 0 auto;
-    height: 50px;
-}

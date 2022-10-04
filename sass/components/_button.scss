@@ -18,9 +18,8 @@
     background-color: var(--btn-color);
     font-family: inherit;
     transition: color var(--duration) var(--timing-function), background-color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
-}
 
-.btn {
+& {
     &:hover {
         color: var(--main-background-color);
         background-color: var(--accent-color);
@@ -39,16 +38,32 @@
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }
+}
 
 .btn.primary {
-    padding-top: 10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
     background-color: var(--accent-color);
     color: var(--main-background-color);
     font-weight: 700;
     letter-spacing: 0.06em;
+}
+
+.hero__btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.send__btn {
+    margin: 0 auto;
+    height: 50px;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .close-btn {
@@ -91,4 +106,9 @@
     &:hover {
             fill: var(--accent-color);
         }
+}
+
+.btn--all {
+    padding-left: 25px;
+    padding-right: 25px;
 }
